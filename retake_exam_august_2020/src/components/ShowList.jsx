@@ -19,7 +19,7 @@ const ShowList = () => {
 
   let dataShow = data.map((show) => {
     return (
-      <div class="display-show">
+      <div class="display-show" data-cy="display-show">
         <img
           src={`${show.content.images.landscape.url}`}
           alt="serieImage"

@@ -13,7 +13,12 @@ describe("Use can see Listing of tv series", () => {
     cy.get('[data-cy="logo"]').should("exist");
   });
 
+  it("User can see footer", () => {
+    cy.get('[data-cy="footer-fixed"]').should("exist");
+  });
+
   it("User can see images", () => {
+    cy.get('[data-cy="display-show"]').children().should('have.length', 10)
     cy.get('[data-cy="image"]').should("exist");
   });
 });
