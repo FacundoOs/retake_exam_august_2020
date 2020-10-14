@@ -13,7 +13,7 @@ describe("Use can see Listing of tv series", () => {
     cy.get('[data-cy="logo"]').should("exist");
   });
 
-  it("User can see a list", () => {
+  it("User can see images", () => {
     cy.get('[data-cy="image"]').should("exist");
   });
 });

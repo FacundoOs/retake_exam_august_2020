@@ -19,8 +19,8 @@ const ShowList = () => {
   let dataShow = data.map((show) => {
   
     return (
-      <div>
-        <img src={`${show.content.images.landscape.url}`} alt="serieImage"></img>
+      <div class="display-show">
+        <img src={`${show.content.images.landscape.url}`} alt="serieImage" data-cy="image"></img>
       </div>
     );
   });
