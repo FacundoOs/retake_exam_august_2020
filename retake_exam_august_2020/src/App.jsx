@@ -1,12 +1,16 @@
 import React from "react";
-import Header from './components/Header'
-import ShowList from './components/ShowList'
+import HeaderSeries from "./components/Header";
+import ShowList from "./components/ShowList";
+import Footer from "./components/Footer";
 
 function App() {
-  return <div>
-    <Header />
-    <ShowList />
-  </div>;
+  return (
+    <div>
+      <HeaderSeries />
+      <ShowList />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

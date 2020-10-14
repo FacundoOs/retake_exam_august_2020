@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Container } from "semantic-ui-react";
 
 const ShowList = () => {
   const [data, setData] = useState([]);
@@ -17,17 +18,18 @@ const ShowList = () => {
   }, []);
 
   let dataShow = data.map((show) => {
-  
     return (
       <div class="display-show">
-        <img src={`${show.content.images.landscape.url}`} alt="serieImage" data-cy="image"></img>
+        <img
+          src={`${show.content.images.landscape.url}`}
+          alt="serieImage"
+          data-cy="image"
+        ></img>
       </div>
     );
   });
 
-  return <div>
-    {dataShow}
-  </div>;
+  return <Container>{dataShow}</Container>;
 };
 
 export default ShowList;
