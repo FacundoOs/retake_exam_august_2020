@@ -3,7 +3,7 @@ describe("Use can see Listing of tv series", () => {
     cy.server();
     cy.route({
       method: "GET",
-      ulr: "https://content.viaplay.se/pc-se/serier/samtliga",
+      url: "https://content.viaplay.se/pc-se/serier/samtliga",
       response: "fixture:tvList.json",
     });
     cy.visit("/");
