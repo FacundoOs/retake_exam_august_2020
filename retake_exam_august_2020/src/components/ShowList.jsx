@@ -17,14 +17,17 @@ const ShowList = () => {
   }, []);
 
   let dataShow = data.map((show) => {
+  
     return (
       <div>
-        <img src={`${show.content.images.lansscape.url}`}></img>
+        <img src={`${show.content.images.landscape.url}`} alt="serieImage"></img>
       </div>
     );
   });
 
-  return <div></div>;
+  return <div>
+    {dataShow}
+  </div>;
 };
 
 export default ShowList;
